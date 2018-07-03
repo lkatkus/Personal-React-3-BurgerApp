@@ -8,7 +8,7 @@ class Modal extends Component{
        
     shouldComponentUpdate(nextProps, nextState){
         // Only call update if Modal is visible. Wrapping element is controling wrapped element
-        return nextProps.show !== this.props.show
+        return nextProps.show !== this.props.show || nextProps.children !== this.props.children; /* children check is for displaying loading spinner */
     }
 
     render(){

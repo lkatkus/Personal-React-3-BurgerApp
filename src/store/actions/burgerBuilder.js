@@ -21,13 +21,13 @@ export const setIngredients = (ingredients) => {
         type: actionTypes.SET_INGREDIENTS,
         ingredients: ingredients
     }
-}
+};
 
-export const setIngredientsFailed = (ingredients) => {
+export const setIngredientsFailed = () => {
     return{
         type: actionTypes.SET_INGREDIENTS_FAILED
     }
-}
+};
 
 export const initIngredients = () => {
     return (dispatch) => {
